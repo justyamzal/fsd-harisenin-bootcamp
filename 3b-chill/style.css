@@ -12,14 +12,178 @@
 body {
   background-image: url('assets/bg-images/bg-login.png');
   min-height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-position: center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container {
   background-color: rgba(24, 26, 28, 0.84);
   width: 100%;
   max-width: 529px;
+  border-radius: 16px;
+  padding: 40px;
+
   display: flex;
   flex-direction: column;
+  gap: 37px;
+  color: white;
 }
+
+/*--- Login Card Header ---*/
+
+.login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  text-align: center;
+}
+
+.login-header h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.login-header .caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-header p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+}
+
+/*--- Login Form ---*/
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.login-form .input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+ .input-group label {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+}
+
+ .input-group input {
+  width: 100%;
+  padding: 14px 20px;
+  
+  background-color: transparent;
+  border-radius: 24px;
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: rgba(193, 194, 196, 1);
+}
+
+
+
+.input-group .password-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+#toggle-password {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #a0a0a0;
+}
+
+.form-links  {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(193, 194, 196, 1);
+
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.form-links a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.form-links a:hover {
+  text-decoration: underline;
+}
+
+/*--- Button action group ---*/
+.btn-group {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.btn-group .btn {
+  border-radius: 24px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  
+}
+
+.btn-login {
+  gap: 10px;
+  background-color: rgba(61, 65, 66, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(231, 227, 252, 0.23);
+  
+}
+
+.btn-group .divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(157, 158, 161, 1);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(231, 227, 252, 0.23);
+}
+
