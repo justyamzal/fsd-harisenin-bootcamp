@@ -101,8 +101,6 @@ body {
   color: rgba(193, 194, 196, 1);
 }
 
-
-
 .input-group .password-wrapper {
   display: flex;
   flex-direction: column;
@@ -186,4 +184,123 @@ gap: 8px;
   color: rgba(255, 255, 255, 1);
   border: 1px solid rgba(231, 227, 252, 0.23);
 }
+
+/*--- Media Queries ---*/
+
+
+@media (max-width:360px) {
+
+  .login-container {
+    width: 306px;
+    min-width: 0;
+    max-width: 100vw;
+    /* height: 384px; Jika ingin fixed, tapi lebih baik biarkan auto untuk responsif konten */
+    min-height: 384px;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .login-header .logo {
+    width: 94px;
+    min-height: 24px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+
+  .login-header .caption {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .login-header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+  }
+
+  .login-header p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+  }
+
+  .input-group.username-field {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .input-group.password-field {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .input-group label {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-width: 1px;
+  }
+
+  .form-links {
+    font-size: 12px;
+    gap: 0;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+  .form-links a {
+    font-size: 12px;
+  }
+
+  .btn-group {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .btn-login {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+    border-radius: 13.86px;
+    border-width: 0.58px;
+    margin-bottom: 4px;
+  }
+
+  .btn-group .divider {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .btn-google {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+    border-radius: 13.86px;
+    border-width: 0.58px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-google img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 8px;
+  }
+}
+
+
 
