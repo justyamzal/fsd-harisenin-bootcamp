@@ -12,11 +12,10 @@
 body {
   background-image: url('assets/bg-images/bg-login.png');
   width: 100%;
-  min-height: 100vh;
   /* width: 100vw; */
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +28,6 @@ body {
   /* min-height: auto; */
   border-radius: 16px;
   padding: 40px;
-
   display: flex;
   flex-direction: column;
   gap: 37px;
