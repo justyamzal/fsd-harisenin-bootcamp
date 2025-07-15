@@ -24,13 +24,49 @@
     <main class="register-container">
         <!-- header form -->
         <header class="register-header">
-            <img src="assets/icon/Logo.png" class="logo" alt="logo">
+            <img src="assets/icon/Logo.svg" class="logo" alt="logo">
             <div class="caption">
                 <h3>Daftar</h3>
-                <p>Selamat datang di CHILL</p>
+                <p>Selamat datang!</p>
             </div>
         </header>
+        <!-- form -->
+        <form action="" class="register-form">
+            <div class="input-group username-field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Masukkan username">
+            </div>
+            <div class="input-group password-field">
+                <label for="password">Kata Sandi</label>
+                <div class="password-wrapper">
+                    <input type="text" name="password" id="password" placeholder="Masukkan kata sandi">
+                    <img src="assets/icon/eye-off.svg" alt="" class="toggle-password">
+                </div>
+            </div>
 
+            <div class="input-group confirm-pass-field">
+                <label for="confirm-pass">Konfirmasi Kata Sandi</label>
+                <div class="password-wrapper">
+                    <input type="text" name="confirm-password" id="confirm-pass" placeholder="Masukkan kata sandi">
+                    <img src="assets/icon/eye-off.svg" alt="" class="toggle-password">
+                </div>
+                
+                <div class="form-links">
+                    <span id="">Sudah punya akun? 
+                        <a href="login.html">Masuk</a>
+                    </span>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-register">Daftar</button>
+                <div class="divider">Atau</div>
+                <button type="button" class="btn btn-reg-google">
+                   <img src="assets/icon/google-icon.svg" alt="Google icon"> 
+                   Daftar dengan Google
+                </button>
+            </div>
+        </form>
     </main>
 </body>
 
