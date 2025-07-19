@@ -5,10 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+  
 }
 
 body {
+  font-family: Lato, sans-serif;
   background-image: url('assets/bg-images/bg-registration.png');
   width: 100%;
   min-height: 100vh;

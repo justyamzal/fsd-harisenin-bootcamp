@@ -6,10 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
+
 }
 
 body {
+  font-family: Lato, sans-serif;
   background-image: url('assets/bg-images/bg-login.png');
   width: 100%;
   min-height: 100vh;
@@ -165,6 +166,7 @@ body {
   border: 1px solid rgba(231, 227, 252, 0.23);
 
 }
+
 
 .btn-group .divider {
   display: flex;
