@@ -36,7 +36,6 @@ body {
     cursor: pointer;
 }
 
-
 .main-nav ul {
     display: flex;
     list-style-type: none;
@@ -58,6 +57,8 @@ body {
 }
 
 .user-profile {
+    position: relative;
+
     display: flex;
     align-items: center;
     gap: 8px;
@@ -73,6 +74,43 @@ body {
     width: 28px;
 
 }
+
+/* Avatar Dropdown */
+.dropdown-profile {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(24, 26, 28, 1);
+    border: 1px solid rgba(3, 103, 219, 1);
+    border-radius: 8px;
+    padding: 16px;
+    width: 180px;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown-profile ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.dropdown-profile ul li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-profile ul li:hover {
+    color: rgba(3, 103, 219, 1);
+}
+
+
 
 /*----- HERO SECTION -----*/
 #hero {
@@ -179,9 +217,11 @@ body {
     border: 1px solid rgba(193, 194, 196, 1);
     border-radius: 24px;
     padding: 10px;
+    cursor: pointer;
 }
 
 /*----- CONTENT SECTION  -----*/
+
 .history {
     width: 100%;
     height: 309px;
@@ -202,8 +242,6 @@ body {
     padding-top: 32px;
     flex-direction: row;
     gap: 24px;
-    /* overflow-x: scroll; */
-    /* scrollbar-width: none; */
 }
 
 .history .movie-card {
@@ -251,9 +289,6 @@ body {
 }
 
 .history .arrow-btn {
-    /* position: absolute; */
-    /* left: 0px; */
-    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,3 +313,243 @@ body {
     top:85px;
     z-index: 1;
 }
+
+.badge-new-eps {
+    position: absolute;
+    top: -91px;
+    background-color: rgba(15, 30, 147, 1);
+    border-radius: 24px;
+    padding: 4px 10px;
+    display: flex;
+    gap: 4px;
+}
+
+/*----- Top Rating ------*/
+.content-section {
+    width: 100%;
+    padding: 40px 80px;
+}
+
+.top-rating .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.top-rating .movie-card {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    gap: 28px;
+}
+.top-rating .movie-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+ 
+.top-rating .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: rgba(47, 51, 52, 1);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.top-rating .arrow-left {
+    position: absolute;
+    left:-1.5%;
+    top: 45%;
+    z-index: 1;
+}
+
+.top-rating .arrow-right {
+    position: absolute;
+    right:15%;
+    top: 45%;
+    z-index: 1;
+}
+
+/*----- Trending -----*/
+
+.trending .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.trending .movie-card {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    gap: 28px;
+}
+.trending .movie-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+ 
+.trending .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: rgba(47, 51, 52, 1);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.trending .arrow-left {
+    position: absolute;
+    left: -1.5%;
+    top: 45%;
+    z-index: 1;
+}
+
+.trending .arrow-right {
+    position: absolute;
+    right:15%;
+    top: 45%;
+    z-index: 1;
+}
+
+/*----- Rilis Baru -----*/
+.new-release .card-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.new-release .movie-card {
+    display: flex;
+    flex-direction: column;
+    width: 234px;
+    height: 365px;
+    border-radius: 8px;
+    gap: 28px;
+}
+
+.new-release .movie-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.new-release .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: rgba(47, 51, 52, 1);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.new-release .arrow-left {
+    position: absolute;
+    left: -1.5%;
+    top: 45%;
+    z-index: 1;
+}
+
+.new-release .arrow-right {
+    position: absolute;
+    right:15%;
+    top: 45%;
+    z-index: 1;
+}
+
+/*----- Footer -----*/
+.footer {
+    width: 100%;
+    padding: 60px 80px;
+    display: flex;
+    border-top: 1px solid rgba(231, 227, 252, 0.23);
+    gap:20px;    
+    
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo p {
+    padding-top: 26px;
+    font-size: 16px;
+    line-height: 20.4px;
+}
+
+.footer p.title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+.genre-list {
+    display: flex;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.genre-list ul{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 15px;
+    padding-right: 28px;
+}
+
+
+ul.help-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 15px;
+}
+
+.genre-list ul li, .help-list li {
+    list-style: none; 
+}
+
+.genre-list ul li a, .help-list li a {
+    color: rgba(193, 194, 196, 1);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+.genre-list ul li a:hover, .help-list li a:hover {
+    text-decoration: underline;
+}
+
